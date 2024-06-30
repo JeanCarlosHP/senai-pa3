@@ -1,0 +1,54 @@
+### POST /requisition
+
+POST http://localhost:3000/requisition
+Content-Type: application/json
+
+{
+    "codigo": "Código da requisição",
+    "data": "Data da requisição",
+    "usuario": "ID do usuário que fez a requisição",
+    "itens": [
+        {
+            "codigo": "Código do item",
+            "quantidade": "Quantidade do item requisitada"
+        }
+    ],
+    "status": "Status da requisição",
+    "observacao": "Observação da requisição",
+    "dataStatus": "Data da última atualização do status da requisição",
+    "aprovador": "ID do usuário que aprovou a requisição"
+}
+
+### GET /requisition
+
+GET http://localhost:3000/requisition
+
+### GET /requisition/:id
+
+GET http://localhost:3000/requisition/1
+
+### PUT /requisition/:id
+
+PUT http://localhost:3000/requisition/1
+Content-Type: application/json
+
+{
+  "codigo": "teste",
+  "data": "Data da requisição",
+  "usuario": "ID do usuário que fez a requisição",
+  "itens": [
+    {
+      "codigo": "Código do item",
+      "quantidade": "Quantidade do item requisitada"
+    }
+  ],
+  "status": "Status da requisição",
+  "observacao": "Observação da requisição",
+  "dataStatus": "Data da última atualização do status da requisição",
+  "aprovador": "ID do usuário que aprovou a requisição",
+  "id": 1
+}
+
+### DELETE /requisition/:id
+
+DELETE http://localhost:3000/requisition/1

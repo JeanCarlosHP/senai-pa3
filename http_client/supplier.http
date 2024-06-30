@@ -1,0 +1,42 @@
+### POST /supplier
+
+POST http://localhost:3000/supplier
+Content-Type: application/json
+
+{
+    "nome": "Nome do Fornecedor",
+    "cnpj": "CNPJ do Fornecedor",
+    "endereco": "Endereço do Fornecedor",
+    "telefone": "Telefone do Fornecedor",
+    "email": "Email do Fornecedor",
+    "website": "Website do Fornecedor",
+    "contato": "Nome do Contato no Fornecedor"
+}
+
+### GET /supplier
+
+GET http://localhost:3000/supplier
+
+### GET /supplier/:id
+
+GET http://localhost:3000/supplier/1
+
+### PUT /supplier/:id
+
+PUT http://localhost:3000/supplier/1
+Content-Type: application/json
+
+{
+    "nome": "Teste",
+    "cnpj": "CNPJ do Fornecedor Atualizado",
+    "endereco": "Endereço do Fornecedor Atualizado",
+    "telefone": "Telefone do Fornecedor Atualizado",
+    "email": "Email do Fornecedor Atualizado",
+    "website": "Website do Fornecedor Atualizado",
+    "contato": "Nome do Contato no Fornecedor Atualizado",
+    "id": 1
+}
+
+### DELETE /supplier/:id
+
+DELETE http://localhost:3000/supplier/1

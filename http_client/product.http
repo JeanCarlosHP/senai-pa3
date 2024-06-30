@@ -1,0 +1,46 @@
+### POST /product
+
+POST http://localhost:3000/product
+Content-Type: application/json
+
+{
+  "codigo": "ITM-123",
+  "nome": "Caneta azul",
+  "descricao": "Caneta esferográfica com tinta azul.",
+  "categoria": "Material de escritório",
+  "unidadeMedida": "unidade",
+  "quantidadeEstoque": 100,
+  "valorUnitario": 2.50,
+  "fornecedor": 2,
+  "status": "ativo"
+}
+
+### GET /product
+
+GET http://localhost:3000/product
+
+### GET /product/:id
+
+GET http://localhost:3000/product/1
+
+### PUT /product/:id
+
+PUT http://localhost:3000/product/1
+Content-Type: application/json
+
+{
+  "codigo": "ITM-123",
+  "nome": "Caneta azul",
+  "descricao": "Caneta esferográfica com tinta azul.",
+  "categoria": "Material de escritório",
+  "unidadeMedida": "unidade",
+  "quantidadeEstoque": 100,
+  "valorUnitario": 2.50,
+  "fornecedor": 2,
+  "status": "inativo",
+  "id": 1
+}
+
+### DELETE /product/:id
+
+DELETE http://localhost:3000/product/1
